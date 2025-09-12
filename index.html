@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slip Test I - Calculus and Matrix Algebra</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- KaTeX for mathematical typesetting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" xintegrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" xintegrity="sha384-XjKyOOlGwcjNTAIQHIgsOcwrBwlLdUf17vKkxDsOiCCLVbFproofGfqs4sduTanx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" xintegrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+    
+    <style>
+        /* Custom styles to emulate Beamer's Madrid theme look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .beamer-slide {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            border: 1px solid #e5e7eb;
+            display: flex;
+            flex-direction: column;
+        }
+        .beamer-frametitle {
+            background-color: #283593; /* A deep blue similar to Madrid theme */
+            color: white;
+            padding: 0.75rem;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.25rem;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+        }
+        .katex-display {
+            margin: 1rem 0; /* Add some vertical space around display equations */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4 sm:p-6 md:p-8">
+
+    <div class="max-w-7xl mx-auto space-y-8">
+
+        <!-- Slide 1: Title Page -->
+        <div class="beamer-slide bg-white rounded-lg aspect-[16/9] items-center justify-center text-center p-8">
+            <div class="w-full max-w-2xl">
+                <h1 class="text-4xl md:text-5xl font-bold text-green-800">SLIP TEST I</h1>
+                <h2 class="text-xl md:text-2xl font-bold text-purple-800 mt-4">24UMA161- CALCULUS AND MATRIX ALGEBRA</h2>
+                <hr class="w-1/4 my-8 border-t-2 border-indigo-200 mx-auto">
+                <p class="text-xl md:text-2xl font-bold text-pink-700">DEPARTMENT OF SCIENCE AND HUMANITIES</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: Questions -->
+        <div class="beamer-slide bg-white rounded-lg aspect-[16/9]">
+            <div class="beamer-frametitle">
+                SLIP TEST I
+            </div>
+            <div class="p-6 md:p-8 text-base sm:text-lg flex-grow overflow-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 h-full">
+                    
+                    <!-- Column 1: Set A -->
+                    <div class="border-r-0 md:border-r md:pr-4 border-gray-200 space-y-4 flex flex-col">
+                        <div class="text-center">
+                            <h3 class="text-xl font-bold underline text-purple-700">Set A</h3>
+                            <p class="font-semibold text-right text-sm text-yellow-900">Total Marks: 24</p>
+                        </div>
+                        <p class="font-bold text-green-800 text-lg sm:text-xl">Answer all questions.</p>
+
+                        <!-- Question A1 -->
+                        <div>
+                            <p class="font-medium text-pink-700"><span class="text-blue-800 font-bold">1.</span> Find the eigenvalues and corresponding eigenvectors for the following matrix: <span class="font-bold whitespace-nowrap text-red-700">(8 Marks)</span></p>
+                            <div class="flex justify-center my-2 text-violet-800">$$A = \begin{pmatrix} 2 & -1 & 0 \\ -1 & 2 & -1 \\ 0 & -1 & 2 \end{pmatrix}$$</div>
+                        </div>
+
+                        <!-- Question A2 -->
+                        <div>
+                            <p class="font-medium text-pink-700"><span class="text-blue-800 font-bold">2.</span> Reduce the quadratic form</p>
+                            <div class="my-2 text-violet-800">$$Q(x, y, z) = 2x^2 + 2y^2 + 2z^2 - 2xy - 2yz$$</div>
+                            <p class="font-medium text-pink-700">into its canonical form by orthogonal reduction. Also, find the orthogonal matrix that performs this transformation. <span class="font-bold whitespace-nowrap text-red-700">(16 Marks)</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Set B -->
+                    <div class="mt-8 md:mt-0 space-y-4 flex flex-col">
+                         <div class="text-center">
+                            <h3 class="text-xl font-bold underline text-purple-700">Set B</h3>
+                            <p class="font-semibold text-right text-sm text-yellow-900">Total Marks: 24</p>
+                        </div>
+                        <p class="font-bold text-green-800 text-lg sm:text-xl">Answer all questions.</p>
+
+                        <!-- Question B1 -->
+                        <div>
+                            <p class="font-medium text-pink-700"><span class="text-blue-800 font-bold">1.</span> Find the eigenvalues and corresponding eigenvectors for the following matrix: <span class="font-bold whitespace-nowrap text-red-700">(8 Marks)</span></p>
+                            <div class="flex justify-center my-2 text-violet-800">$$B = \begin{pmatrix} 1 & 0 & 1 \\ 0 & 2 & 0 \\ 1 & 0 & 1 \end{pmatrix}$$</div>
+                        </div>
+
+                        <!-- Question B2 -->
+                        <div>
+                            <p class="font-medium text-pink-700"><span class="text-blue-800 font-bold">2.</span> Reduce the quadratic form</p>
+                            <div class="my-2 text-violet-800">$$Q(x, y, z) = x^2 + 2y^2 + z^2 + 2xz$$</div>
+                            <p class="font-medium text-pink-700">into its canonical form by orthogonal reduction. Also, find the orthogonal matrix that performs this transformation. <span class="font-bold whitespace-nowrap text-red-700">(16 Marks)</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Script to trigger KaTeX rendering -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+                throwOnError : false
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
